@@ -1,5 +1,5 @@
 import Avatar from "./Avatar";
-import CTA from "./SocialLinks";
+import SocialLinks from "./SocialLinks";
 import DLButton from "./DLButton";
 
 
@@ -9,7 +9,7 @@ const ProfileCard = () => {
             <Avatar/>
             <h2 className=' font-bold text-2xl mt-2'>Diego Cadenas</h2>
             <p className='font-medium text-lg'>Web developer</p>
-            <CTA/>
+            <SocialLinks/>
             <DLButton/>
         </div>
     );
