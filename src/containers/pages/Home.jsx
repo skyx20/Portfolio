@@ -5,7 +5,6 @@ const Home = () => {
     return ( 
         <Layout>
             <Header/>
-            <div className="bg-white"> HOME </div>
         </Layout>
     );
 }
