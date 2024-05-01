@@ -2,7 +2,7 @@
 
 const Footer = () => {
     return ( 
-        <div className='m-2 mx-auto text-center '>
+        <div className='absolute bottom-4 m-2 mx-4 text-center mb-auto'>
             <p className="font-light font-serif text-sm">@2024 by Diego Cadenas</p>
         </div>
     );

@@ -2,7 +2,6 @@ import Footer from '../../components/navigation/Footer';
 import Navbar from '../../components/navigation/Navbar'
 import RespNavbar from '../../components/navigation/RespNavbar'
 import ProfileCard from '../../components/profile/ProfileCard'
-import {useState} from 'react'
 
 const Layout = ({children}) => {
 
