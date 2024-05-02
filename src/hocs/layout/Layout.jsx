@@ -7,7 +7,8 @@ const Layout = ({children}) => {
 
 
     return ( 
-        <div className="flex p-20 h-screen">
+        <div className="flex p-4 transition-all
+        duration-400 ease-in-out md:p-20 h-screen">
             <div className='hidden lg:block p-4 pr-6 relative left-4 w-64
             bg-cyan-300 overflow-auto border-cyan-400 rounded-l-2xl
             shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]'>
