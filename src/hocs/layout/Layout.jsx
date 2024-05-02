@@ -7,7 +7,7 @@ const Layout = ({children}) => {
 
 
     return ( 
-        <div className="flex p-4 transition-all
+        <div className="flex p-4 sm:p-8 transition-all
         duration-400 ease-in-out md:p-20 h-screen">
             <div className='hidden lg:block p-4 pr-6 relative left-4 w-64
             bg-cyan-300 overflow-auto border-cyan-400 rounded-l-2xl
@@ -20,10 +20,10 @@ const Layout = ({children}) => {
             shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]'>
                 {children}
             </div>
-            <div className='hidden lg:block flex-initial m-2 p-2'>
+            <div className='hidden lg:block flex-initial px-2'>
                 <Navbar/>
             </div>
-            <div className='lg:hidden m-2 p-2'>
+            <div className='lg:hidden px-2 sm:mx-2 sm:px-2'>
                 <RespNavbar/>
             </div>
         </div>
