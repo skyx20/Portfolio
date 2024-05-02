@@ -22,14 +22,15 @@ const links = [
 
 const RespNavbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    console.log(isOpen)
+    console.log(window.innerWidth)
     return (
-        <div className='h-full '>
-            <div className="hover:cursor-pointer">
-                <box-icon  size={'md'} name={isOpen ? '': 'menu'} onClick={
+        <div className={`hover:cursor-pointer pt-1 px-1 bg-cyan-400 sm:bg-white rounded-full h-fit ${isOpen ? 'bg-white': ''}`}>
+
+            {/* <div className={`hover:cursor-pointer  m-2 rounded-full h-fit ${isOpen ? 'bg-white': 'bg-cyan-400'}`}> */}
+                <box-icon  size={window.innerWidth <= 400 ? 'sm': 'md'} name={isOpen ? '': 'menu'} onClick={
                     () => { isOpen ? setIsOpen(false) : setIsOpen(true);}}>
                 </box-icon>
-            </div>
+            {/* </div> */}
             <div className={
                 `bg-gray-400 backdrop-blur-md  transition z-10 duration-200 ease-in-out fixed top-0 left-0 
                 ${isOpen ? 'opacity-50 h-screen w-screen': 'opacity-0'} 

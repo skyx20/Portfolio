@@ -24,9 +24,11 @@ const Layout = ({children}) => {
             <div className='hidden lg:block flex-initial px-2'>
                 <Navbar/>
             </div>
-            <div className='lg:hidden px-2 sm:mx-2 sm:px-2 sm:static 
-            absolute z-20
-            right-4 top-4'>
+            <div className='
+            lg:hidden h-fit p-1
+            sm:mx-2 sm:px-2 sm:static 
+            absolute z-30  rounded-full
+            right-6 top-8'>
                 <RespNavbar/>
             </div>
         </div>
