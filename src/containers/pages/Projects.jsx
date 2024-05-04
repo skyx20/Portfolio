@@ -10,13 +10,7 @@ const data =
         'title': 'Marketing Agency',
         'url': p1
     },
-    {
-        'id': '2',
-        'description': 'something',
-        'title': 'Marketing Agency',
-        'url': p1
-    },
-    
+
 ]
 
 

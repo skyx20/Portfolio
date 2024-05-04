@@ -7,12 +7,12 @@ const ULA = ({props:links}) => {
             {links.map(({route, title})=>(
                 <NavLink to={route} 
                     key={title}
-                    className="hover:before:scale-x-100 
+                    className={`hover:before:scale-x-100 
                     hover:before:origin-left 
                     text-xl 
                     font-medium
                     text-gray-800
-                    my-2 
+                    ${window.innerHeight <= 400 ? 'm-0': 'm-2'}
                     relative 
                     before:w-full
                     before:h-1 
@@ -24,7 +24,10 @@ const ULA = ({props:links}) => {
                     before:bg-white 
                     before:absolute 
                     before:left-0 
-                    before:-bottom-2 ">
+                    
+                    ${window.innerHeight <= 400 ? 'before:-bottom-0': 'before:-bottom-2'}
+                    
+                    `}>
                     {title}
                     {/* <span className='
                     absolute

@@ -40,8 +40,8 @@ const RespNavbar = () => {
                 }}>
             
             </div>
-            <section className={`flex flex-col fixed top-0 w-1/2 z-20 h-screen bg-gradient-to-br from-cyan-500 via-cyan-600
-            transition-all ease-in-out duration-500 ${isOpen ? 'right-0': '-right-1/2'}`}>
+            <section className={`flex flex-col fixed top-0 w-1/2 z-20 h-screen bg-cyan-400
+            transition-all  hover:cursor-default ease-in-out duration-500 ${isOpen ? 'right-0': '-right-1/2'}`}>
                 <div className='mr-2 mt-2 '>
                     <div className='ml-auto w-fit mr-2 hover:cursor-pointer'>
                         <box-icon size={'md'} name={isOpen ? 'x': ''}  onClick={
