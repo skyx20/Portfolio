@@ -3,8 +3,8 @@ import profile from '../../assets/images//profile/profile.png'
 
 const Avatar = () => {
     return (
-        <div className="m-6 ">
-            <img class="w-40 h-40 sm:w-50% sm:h-50% p-1 rounded-full ring-2 ring-white" src={profile} alt="Profile"/>
+        <div className="m-2 sm:m-6 ">
+            <img class="w-28 h-28 sm:w-40 sm:h-40 p-1 rounded-full ring-2 ring-white" src={profile} alt="Profile"/>
         </div>
     );
 }
