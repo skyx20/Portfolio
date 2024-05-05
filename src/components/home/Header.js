@@ -24,6 +24,7 @@ const Header = () => {
                         <span> </span>{ <Typewriter 
                     words={['Web developer', 'Backend', 'Frontend','Full stack']}
                     loop={0}
+                    cursor
                     cursorStyle='|'
                     typeSpeed={70}
                     deleteSpeed={50}
