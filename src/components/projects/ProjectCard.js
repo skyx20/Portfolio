@@ -15,9 +15,9 @@ const ProjectCard = ({data}) => {
 
             {/* <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">{data.description}</p> */}
             
-            <Link to="https://marketing-agency-plum-rho.vercel.app/" target='_blank' class="rounded-full bg-neutral-900 py-2 hover:cursor-pointer px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Visit</Link>
+            <Link to="https://marketing-agency-plum-rho.vercel.app/" target='_blank' class="rounded-full bg-neutral-900 py-2 hover:cursor-pointer hover:bg-neutral-800 transition duration-300 ease-in-out hover:scale-105 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Visit</Link>
             <div className='h-2'></div>
-            <Link to="https://github.com/skyx20/marketing-agency" target='_blank' class="rounded-full bg-neutral-900 py-2 hover:cursor-pointer px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Github</Link>
+            <Link to="https://github.com/skyx20/marketing-agency" target='_blank' class="rounded-full bg-neutral-900 py-2 hover:cursor-pointer hover:bg-neutral-800 transition duration-300 ease-in-out hover:scale-105 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Github</Link>
 
           </div>
         </div>))}
