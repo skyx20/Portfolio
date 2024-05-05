@@ -22,7 +22,6 @@ const links = [
 
 const RespNavbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    console.log(window.innerWidth)
     return (
         <div className={`hover:cursor-pointer pt-1 px-1  sm:bg-white rounded-full h-fit ${isOpen ? 'bg-white': 'bg-cyan-400'}`}>
 
