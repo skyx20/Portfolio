@@ -19,10 +19,9 @@ const Projects = () => {
         <Layout>
             <div className='overflow-auto w-full h-full'>
                 <div class="flex overflow-auto items-center justify-center">
-                <div class="grid mt-8
-                            grid-cols-1 gap-5 xl:grid-cols-2 2xl:grid-cols-3">
-                <ProjectCard data={data}/>
-                </div>
+                    <div class="grid mt-14 sm:mt-8 grid-cols-1 gap-5 xl:grid-cols-2 2xl:grid-cols-3">
+                        <ProjectCard data={data}/>
+                    </div>
                 </div>
             </div>
         
