@@ -4,9 +4,9 @@ const ULA = ({props:links}) => {
     
     return ( 
         <div className="h-full flex flex-col w-full justify-content items-center">
-            {links.map(({route, title})=>(
-                <NavLink to={route} 
-                    key={title}
+            {links.map((link, index)=>(
+                <NavLink to={link.route} 
+                    key={index}
                     className={`hover:before:scale-x-100 
                     hover:before:origin-left 
                     text-xl 
@@ -24,27 +24,9 @@ const ULA = ({props:links}) => {
                     before:bg-white 
                     before:absolute 
                     before:left-0 
-                    
                     ${window.innerHeight <= 400 ? 'before:-bottom-0': 'before:-bottom-2'}
-                    
                     `}>
-                    {title}
-                    {/* <span className='
-                    absolute
-                    -bottom-1
-                    left-0
-                    h-1
-                    z-20
-                    rounded-full 
-                    ease-out
-                    transition-transform 
-                    duration-300 
-                    origin-left
-                    group-hover:w-full
-                    group-hover:bg-sky-300
-                    group-hover:origin-right
-                    
-                    '></span> */}
+                    {link.title}
                 </NavLink>
                 ))}
         </div>

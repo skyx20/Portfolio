@@ -2,21 +2,21 @@
 import ProfileCard from '../../components/profile/ProfileCard'
 import 'boxicons'
 import {useState} from 'react'
-import ULAL from './ULA'
+import ULA from './ULA'
 
 const links = [
     {
-    'title': 'home',
+    'title': 'Home',
     'route': '/'
     },
     {
-    'title': 'projects',
+    'title': 'Projects',
     'route': '/projects/'
     },
-    // {
-    // 'title': 'contact',
-    // 'route': '/contact/'
-    // },
+    {
+    'title': 'contact',
+    'route': '/contact/'
+    },
 ]
 
 
@@ -26,11 +26,9 @@ const RespNavbar = () => {
     return (
         <div className={`hover:cursor-pointer pt-1 px-1  sm:bg-white rounded-full h-fit ${isOpen ? 'bg-white': 'bg-cyan-400'}`}>
 
-            {/* <div className={`hover:cursor-pointer  m-2 rounded-full h-fit ${isOpen ? 'bg-white': 'bg-cyan-400'}`}> */}
-                <box-icon  size={window.innerWidth <= 400 ? 'sm': 'md'} name={isOpen ? '': 'menu'} onClick={
-                    () => { isOpen ? setIsOpen(false) : setIsOpen(true);}}>
-                </box-icon>
-            {/* </div> */}
+            <box-icon  size={window.innerWidth <= 400 ? 'sm': 'md'} name={isOpen ? '': 'menu'} onClick={
+                () => { isOpen ? setIsOpen(false) : setIsOpen(true);}}>
+            </box-icon>
             <div className={
                 `bg-gray-400 backdrop-blur-md  transition z-10 duration-200 ease-in-out fixed top-0 left-0 
                 ${isOpen ? 'opacity-50 h-screen w-screen': 'opacity-0'} 
@@ -50,7 +48,7 @@ const RespNavbar = () => {
                     </div>
                 </div>
                 <ProfileCard/>
-                <ULAL props={links}/>
+                <ULA props={links}/>
             </section>
 
         </div>
