@@ -16,10 +16,18 @@ const Layout = ({children}) => {
                 <ProfileCard/>
                 <Footer/>
             </div>
-            <div className='flex-1 p-4 z-10 bg-white 
+            <div className='overflow-hidden relative flex-1 p-4 z-10 bg-white 
             rounded-2xl
-            shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]'>
+            shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]
+                '>
+                {/* <div className='absolute inset-0 -z-10 h-full rounded-2xl bg-gradient-to-r
+                from-cyan-300
+                to-white
+                animate-pulse '>
+
+                </div> */}
                 {children}
+            
             </div>
             <div className='hidden lg:block flex-initial px-2'>
                 <Navbar/>
