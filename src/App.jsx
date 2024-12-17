@@ -8,8 +8,8 @@ import { Analytics } from "@vercel/analytics/react"
 function App() {
   return (
     <Router>
-      <Routes>
         <Analytics/>
+      <Routes>
         <Route exact path='/' element={<Home/>} />
         <Route exact path='/projects/' element={<Projects/>} />
         <Route exact path='/contact/' element={<Contact/>} />
