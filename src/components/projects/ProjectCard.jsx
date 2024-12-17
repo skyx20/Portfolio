@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 
 const ProjectCard = ({ data }) => {
+  console.log("THIS IS THE DATA FOR PROJECT CARD", data)
   return (
     <>
       {data.map((data) =>
@@ -15,9 +16,9 @@ const ProjectCard = ({ data }) => {
 
           {/* <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">{data.description}</p> */}
 
-          <Link to={data.url - deploy} target='_blank' class="rounded-full bg-neutral-900 py-2 hover:cursor-pointer hover:bg-neutral-800 transition duration-300 ease-in-out hover:scale-105 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Visit</Link>
+          <Link to={data.url_github} target='_blank' class="rounded-full bg-neutral-900 py-2 hover:cursor-pointer hover:bg-neutral-800 transition duration-300 ease-in-out hover:scale-105 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Visit</Link>
           <div className='h-2'></div>
-          <Link to={data.url - github} target='_blank' class="rounded-full bg-neutral-900 py-2 hover:cursor-pointer hover:bg-neutral-800 transition duration-300 ease-in-out hover:scale-105 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Github</Link>
+          <Link to={data.url_deploy} target='_blank' class="rounded-full bg-neutral-900 py-2 hover:cursor-pointer hover:bg-neutral-800 transition duration-300 ease-in-out hover:scale-105 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">Github</Link>
 
         </div>
       </div>))}

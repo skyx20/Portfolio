@@ -13,3 +13,18 @@ module.exports = {
   plugins: [],
 }
 
+// /** @type {import('tailwindcss').Config} */
+// export default {
+//   content: [
+//     "./index.html",
+//     "./src/**/*.{js,jsx,ts,tsx}",
+//   ],
+//   theme: {
+//     extend: {
+//       animation: {
+//         bg_animate: 'bg_animate 10s infinite'
+//       },
+//     },
+//   },
+//   plugins: [],
+// };

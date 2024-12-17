@@ -15,7 +15,6 @@ const Navbar = () => {
             <Link className=' mt-2 relative group' to='/projects/'><box-icon name='briefcase'></box-icon>
             <span className="opacity-0  border-2  rounded-full bg-gray-300 z-40 absolute -left-20">Projects</span>
             </Link>
-            {/* <Link className=' mt-2' to='/contact/'><box-icon name='envelope'></box-icon></Link> */}
         </nav>
     );
 }

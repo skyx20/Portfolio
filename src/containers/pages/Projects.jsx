@@ -9,8 +9,8 @@ const data =
             'description': 'something',
             'title': 'Marketing Agency',
             'img': p1,
-            'url-github': 'https://marketing-agency-plum-rho.vercel.app/',
-            'url-deploy': 'https://github.com/skyx20/marketing-agency'
+            'url_github': 'https://marketing-agency-plum-rho.vercel.app/',
+            'url_deploy': 'https://github.com/skyx20/marketing-agency'
         },
 
     ]
