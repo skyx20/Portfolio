@@ -5,7 +5,7 @@
 This project is a React-based web programm, it uses tailwindcss for styling. 
 
 <p align="center">
-  <img src="./app/assets/images/portfolio-img.png" width="450"/>
+  <img src="./src/assets/images/portfolio-img.png" width="450"/>
 <p>
 
 ### How to install:
