@@ -11,7 +11,7 @@ function App() {
       <Analytics />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="*" element={<Projects />} />
+        <Route exact path="*" element={<Home />} />
         <Route exact path="/projects/" element={<Projects />} />
         <Route exact path="/contact/" element={<Contact />} />
       </Routes>
