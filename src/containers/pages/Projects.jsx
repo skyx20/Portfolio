@@ -2,6 +2,7 @@ import ProjectCard from "../../components/projects/ProjectCard";
 import Layout from "../../hocs/layout/Layout";
 import p1 from "../../assets/images/projects/p1.png";
 import p2 from "../../assets/images/projects/dict_api.png";
+import p3 from "../../assets/images/projects/meanings-ui.png";
 
 const data = [
   {
@@ -18,6 +19,15 @@ const data = [
     title: "English Dict API",
     img: p2,
     url_github: "https://github.com/skyx20/cambridge_api",
+    url_deploy: "",
+  },
+  {
+    id: "3",
+    description: "",
+    title: "Dict extension",
+    img: p3,
+    url_github:
+      "https://github.com/skyx20/dictionary-extension?tab=readme-ov-file",
     url_deploy: "",
   },
 ];
